@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panier</title>
+  <link rel="stylesheet" href="PANIER.css">
+</head>
+<body>
+  <header>
+    <div class=" logo">
+       <img src="Preview (2).png" alt="img" width="96px" >
+    </div>
+    <ul class="navbar">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="LOGIN ELIF.html">LOGIN</a></li>
+      <li><a href="ELIF PR .html">HIJABS</a></li>
+      <li><a href="ABOUT.html">ABOUT</a></li>
+      <li><a href="CONTACT.html">CONTACT</a></li>
+    </ul>
+    <div>
+     <img src="sacs-a-provisions.png" alt="panier" class="panier" >
+    </div>
+</header>
+ <main>
+    <!-- Section Panier -->
+    <section class="cart">
+      <h1>Votre panier</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Produit</th>
+            <th>Prix unitaire</th>
+            <th>Quantité</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Produit 1</td>
+            <td>€20.00</td>
+            <td>
+              <input type="number" value="1" min="1" class="quantity">
+            </td>
+            <td>20.00MAD</td>
+          </tr>
+          <tr>
+            <td>Produit 2</td>
+            <td>15.00MAD</td>
+            <td>
+              <input type="number" value="2" min="1" class="quantity">
+            </td>
+            <td>30.00MAD</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="cart-total">
+        <p><strong>Total général : </strong>50.00MAD</p>
+      </div>
+    </section>
+
+    <!-- Section Paiement -->
+    <section class="payment">
+      <h2>Informations de paiement</h2>
+      <form>
+        <div class="form-group">
+          <label for="card-name">Nom sur la carte</label>
+          <input type="text" id="card-name" placeholder="Jean Dupont" required>
+        </div>
+        <div class="form-group">
+          <label for="card-number">Numéro de carte</label>
+          <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="expiry-date">Date d'expiration</label>
+            <input type="text" id="expiry-date" placeholder="MM/AA" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="123" required>
+          </div>
+        </div>
+        <button type="submit" class="btn-submit">Acheter</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="contact-info">
+        <h3>Contactez-nous:</h3>
+        <p><strong>E-mail:</strong><a href="ELIFHIJAB@gmail.com">ELIFHIJAB@gmail.com</a></p>
+        <p><strong>Téléphone:</strong> <a href="tel:+212693321744">+212 (0)6 93 32 17 44</a></p>
+    </div>
+        <h3>Suivez-nous:</h3>
+        <a href="#"><img src="facebook (1).png" alt="Facebook"class="social"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter" class="social"></a>
+        <a href="#"><img src="instagram (1).png" alt="Instagram" class="social"></a>
+    <div class="button">
+      <p>&copy; 2024 Elif. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
